@@ -10,7 +10,7 @@
 
 ## 二、灵感来源
 <div style="text-align:center">
-  <img src="./image/围棋vs蛋白设计.gif" alt="围棋vs蛋白设计" width="500" height="500">
+  <img src="围棋vs蛋白设计.gif" alt="围棋vs蛋白设计" width="500" height="500">
   <p>类比思路——下围棋和蛋白质突变[1]</p>
 </div>
 
@@ -117,7 +117,7 @@ loss = MSE(q_eval, q_target)
 
 #### 4) DQN训练流程
 <div style="text-align:center">
-  <img src="./image/process.svg" alt="DQN训练流程图" width="600" height="600">
+  <img src="process.svg" alt="DQN训练流程图" width="600" height="600">
 </div>
 
 
