@@ -1,7 +1,7 @@
 # <div style="text-align:center">基于深度强化学习的蛋白质设计</div>
 <div style="text-align:center">
   <p>作者：周龙</p>
-  <p>作者：周龙</p>
+  <p>https://github.com/ZhouLon/SC2025</p>
 </div>
 
 
