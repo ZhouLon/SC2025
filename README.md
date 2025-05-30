@@ -1,22 +1,22 @@
-# <div style="text-align:center">基于深度强化学习的蛋白质设计</div>
-<div style="text-align:center">
-  <p>作者：周龙</p>
-  <p>https://github.com/ZhouLon/SC2025</p>
-</div>
+<h1 align="center">基于深度强化学习的蛋白质设计</h1>
+<p align="center">
+作者：周龙<br>
+<a href="https://github.com/ZhouLon/SC2025">项目地址</a>
+</p>
 
 
 ## 一、模型概述
 本系统采用深度强化学习技术优化绿色荧光蛋白(avGFP)的荧光强度，通过结合**亮度预测模型(价值网络)**和**突变决策模型(DQN网络)**，实现在庞大的蛋白质序列空间（约10^308种可能）中高效搜索高荧光强度变体。系统核心思路是将蛋白质工程问题转化为序列优化问题，通过智能体与环境交互学习最优突变策略。
-<div style="text-align:center">
+<p align="center">
   <img src="整体流程.jpg" alt="围棋vs蛋白设计" width="300" >
-  <p>整体流程</p>
-</div>
+  <p align="center">整体流程</p>
+</p>
 
 ## 二、灵感来源
-<div style="text-align:center">
+<p align="center">
   <img src="围棋vs蛋白设计.gif" alt="围棋vs蛋白设计" width="500" height="500">
-  <p>类比思路——下围棋和蛋白质突变[1]</p>
-</div>
+  <p align="center">类比思路——下围棋和蛋白质突变[1]</p>
+</p>
 
 ### 下围棋 vs 蛋白质设计
 
@@ -121,9 +121,9 @@ loss = MSE(q_eval, q_target)
 ```
 
 #### 4) DQN训练流程
-<div style="text-align:center">
+<p align="center">
   <img src="process.svg" alt="DQN训练流程图" width="600" height="600">
-</div>
+</p>
 
 #### 5) 提取高价值突变回放池
 1. 从高价值经验池提取突变序列
