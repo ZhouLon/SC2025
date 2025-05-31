@@ -1,4 +1,4 @@
-# Copyright (C) 2025 [周龙/华南理工大学生物科学与工程学院] Email:1922450589@qq.com
+# Copyright (C) 2025 [周龙/华南理工大学生物科学与工程学院]
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -13,10 +13,13 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-#Additional terms:
+# Additional terms:
+# Contact: Email: 1922450589@qq.com
+# For any academic use, please contact the author
+# Prior written authorization from the author is required for commercial use
 # 作者联系方式:Email:1922450589@qq.com
-# 1. 任何学术用途需与作者联系
-# 2. 商业使用前需联系作者获得书面授权
+# 任何学术用途需与作者联系
+# 商业使用前需联系作者获得书面授权
 import torch
 from torch import nn
 import pandas as pd

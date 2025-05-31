@@ -1,4 +1,4 @@
-# Copyright (C) 2025 [周龙/华南理工大学生物科学与工程学院] Email:1922450589@qq.com
+# Copyright (C) 2025 [周龙/华南理工大学生物科学与工程学院]
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -13,10 +13,13 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-#Additional terms:
+# Additional terms:
+# Contact: Email: 1922450589@qq.com
+# For any academic use, please contact the author
+# Prior written authorization from the author is required for commercial use
 # 作者联系方式:Email:1922450589@qq.com
-# 1. 任何学术用途需与作者联系
-# 2. 商业使用前需联系作者获得书面授权
+# 任何学术用途需与作者联系
+# 商业使用前需联系作者获得书面授权
 import torch
 from torch import nn
 import numpy as np
@@ -264,7 +267,7 @@ class DQN_Net(object):
         #选择实际执行的动作对应的 Q 值
         q_eval_i = q_eval_i.gather(1, b_a_i.unsqueeze(1))  # [B, 1]
         q_eval_j = q_eval_j.gather(1, b_a_j.unsqueeze(1))  # [B, 1]
-        q_eval = (q_eval_i + q_eval_j) / 2  # 合并 Q 值（或自定义逻辑）
+        q_eval = (q_eval_i + q_eval_j) / 2
 
         #计算 Q_next (目标网络预测的 Q 值)
         with torch.no_grad():
@@ -372,5 +375,5 @@ if __name__ == '__main__':
         pbar.update(1)
 
 
-torch.save(dqn.target_net.state_dict(),'./pth/dqn.pt')
-dqn.save_high_value_memory()
+    torch.save(dqn.target_net.state_dict(),'./pth/dqn.pt')
+    dqn.save_high_value_memory()
