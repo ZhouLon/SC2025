@@ -57,10 +57,8 @@ def csv_to_fasta_biopython(csv_file, fasta_file):
 
 
 if __name__ == "__main__":
-    input_csv = "./nMut/GFP_1Mut.csv"  # 输入 CSV 文件
-    output_fasta = "./nMut/GFP_GFP_1Mut.fasta"  # 输出 FASTA 文件
+    input_csv = "GFP.csv"  # 输入 CSV 文件
+    output_fasta = "GFP.fasta"  # 输出 FASTA 文件
 
     unique_count = csv_to_fasta_biopython(input_csv, output_fasta)
     print(f"FASTA file saved to {output_fasta}")
-
-#tape-embed unirep ./data/origin/GFP_sequences_tape.fasta ./data/output/GFP_sequences_tape.npz babbler-1900 --tokenizer unirep --batch_size 256 --gpu 0
